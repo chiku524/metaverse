@@ -12,7 +12,7 @@ const Home = () => {
     const [images] = useState([CityWalk, Gameroom, Skatepark]);
     const [bgClass, setBgClass] = useState('citywalk');
     const [clicked, setClicked] = useState(false);
-    const [aboutClass, setAboutClass] = useState('about');
+    const [aboutClass, setAboutClass] = useState('about w-0');
     const [fullClass, setFullClass] = useState('full');
 
     const onClickAbout = () => {
