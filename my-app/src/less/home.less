@@ -1,6 +1,6 @@
 .home {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     background-color: black;
     overflow: hidden;
     --color-text: #fff;
@@ -10,9 +10,9 @@
 	--color-info: #efc453;
 	--glitch-width: 100vw;
 	--glitch-height: 100vh;
-	--gap-horizontal: 10px;
-	--gap-vertical: 5px;
-	--time-anim: 4s;
+	--gap-horizontal: 0px;
+	--gap-vertical: 0px;
+	--time-anim: 5s;
 	--blend-mode-1: none;
 	--blend-mode-2: none;
 	--blend-mode-3: none;
@@ -24,23 +24,6 @@
 	--blend-color-4: transparent;
 	--blend-color-5: #af4949;
    
-
-    // .citywalk {
-    //     width: 100%;
-    //     height: 100%;
-    //     background-image: url(../images/City_walk.png);
-    // }
-    // .gameroom {
-    //     width: 100%;
-    //     height: 100%;
-    //     background-image: url(../images/Gameroom.png);
-    // }
-    // .skatepark {
-    //     width: 100%;
-    //     height: 100%;
-    //     background-image: url(../images/Skatepark.png);
-    // }
-
     .transition-btn {
         width: 150px;
         background-color: rgba(219, 200, 200, 0.1);
@@ -82,6 +65,7 @@
 	background: url(../images/City_walk.png) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
 	background-size: cover;
+    transition: background 1s ease-in;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
 }
@@ -128,6 +112,7 @@
 	background: url(../images/Gameroom.png) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
 	background-size: cover;
+    transition: background 1s ease-in;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
 }
@@ -174,6 +159,7 @@
 	background: url(../images/Skatepark.png) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
 	background-size: cover;
+    transition: background 1s ease-in;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
 }
