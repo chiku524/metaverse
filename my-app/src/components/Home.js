@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import CityWalk from '../images/City_walk.png';
 import Gameroom from '../images/Gameroom.png';
 import Skatepark from '../images/Skatepark.png';
-import Nav from '../components/Nav';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import CloseIcon from '@mui/icons-material/Close';
 import '../css/home.css';
@@ -22,7 +21,9 @@ const Home = () => {
         if(bgClass=='gameroom'){setBgClass(`${bgClass} zoomIn-2`); setAboutClass('about w-2 expand');};
     }
     const onClickClose = () => {
-        if(bgClass=='citywalk zoomIn-0'){setBgClass(`${bgClass}`)}
+        if(bgClass=='citywalk zoomIn-0'){setBgClass('citywalk'); setAboutClass('about w-0');}
+        if(bgClass=='skatepark zoomIn-1'){setBgClass('skatepark'); setAboutClass('about w-1');}
+        if(bgClass=='gameroom zoomIn-2'){setBgClass('gameroom'); setAboutClass('about w-2');}
     }
 
     const bgSwitcher = () => {
