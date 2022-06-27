@@ -998,6 +998,39 @@
 			border: 1px;
 			animation: neon-border 5s ease-in-out 0s infinite;
 		}
+
+		.crew {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			color:rgba(252, 247, 251, 0.801);
+			text-shadow: 1px 0px rgba(252, 247, 251, 0.801);
+
+			.person {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 30%;
+				margin: 5px 5px;
+				background-color:rgba(14, 11, 13, 0.76);
+				border-radius: 15px;
+				border: 1px solid rgba(75, 243, 89, 0.726);
+				
+				.profilepic {
+					background-image: url('../images/character_city_walk.png');
+					height: 100px;
+					width: 110px;
+					border-radius: 50%;
+					margin-top: 10px;
+				}
+			}
+			.person:hover {
+				transform: scale(1.2);
+			}
+		}
 	}
 	
 

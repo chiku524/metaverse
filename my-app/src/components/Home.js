@@ -101,7 +101,51 @@ const Home = () => {
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
                         <div className='textBox'>
-                            <h4>team stuff goes here</h4>
+                            <h4>Meet the crew</h4>
+                            <div className='crew'>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Nico</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id='team1' className='xtraspace' />
                         <div className='textBox'>
