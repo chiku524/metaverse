@@ -941,22 +941,45 @@
     overflow: hidden;
 	::-webkit-scrollbar {width: 0; height: 80vh;}
 	scroll-behavior: smooth;
+	display: flex;
+	flex-direction: row;
 
 	.aboutTextContainer {
 		display: flex;
-		flex-direction: column;
-		height: 90%;
-		width: 700px;
-		margin-left: 10%;
-		padding-top: 5%;
+		flex-direction: row;
+		height: 100vh;
+		margin-left: 2%;
 		scroll-snap-align: start;
-		overflow-y: scroll;
 		animation: fade-in-scroll 1s ease-in-out 0s;
 		margin-bottom: 10%;
+
+		.mininav {
+			position: fixed;
+			left: 2%;
+			top: 30%;
+			cursor: pointer;
+			height: 30%;
+		}
+
+		.mininav a {
+			text-shadow: 3px 4px 1px rgba(255, 252, 252, 0.199);
+			text-decoration: none;
+			color:rgb(255, 252, 252);
+			transition: 1s ease-in-out;
+		}
+
+		.textboxes{
+			display: flex;
+			flex-direction: column;
+			width: 600px;
+			padding-bottom: 40%;
+			padding-left: 200px;
+			overflow-y: scroll;
+		}
 		
 		.textBox {
 			margin: 25px 0px;
-			min-height: 700px;
+			min-height: 600px;
 			max-width: 700px;
 			background-color: rgba(114, 58, 131, 0.651);
 			border-radius: 10px;

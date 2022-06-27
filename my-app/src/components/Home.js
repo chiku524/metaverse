@@ -91,17 +91,25 @@ const Home = () => {
         <div className={wPos}>
             <div className={aboutClass}>
                 { aboutClass.includes('expand') ? (<div className='aboutTextContainer'>
-                    <div className='textBox'>
-
+                    <div className='mininav'>
+                        <a href="#team"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team1"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team2"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team3"><h4>MEET THE TEAM</h4></a>
                     </div>
-                    <div className='textBox'>
-                        
-                    </div>
-                    <div className='textBox'>
-                        
-                    </div>
-                    <div className='textBox'>
-                        
+                    <div className='textboxes'>
+                        <div className='textBox' id='team'>
+                            <h4>team stuff goes here</h4>
+                        </div>
+                        <div className='textBox' id='team1'>
+                            <h4>other</h4>
+                        </div>
+                        <div className='textBox' id='team2'>
+                            <h4>more other</h4>
+                        </div>
+                        <div className='textBox' id='team3'>
+                            <h4>and more other</h4>
+                        </div>
                     </div>
                 </div>) : null }
                 <div className='exit'>
