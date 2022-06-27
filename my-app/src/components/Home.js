@@ -6,6 +6,7 @@ import Gameroom from '../images/Gameroom.png';
 import Skatepark from '../images/Skatepark.png';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import CloseIcon from '@mui/icons-material/Close';
+import $ from 'jquery';
 import '../css/home.css';
 
 const Home = () => {
@@ -54,13 +55,13 @@ const Home = () => {
 
     document.addEventListener("keydown", escFunction, false);
 
-    const offsetAnchor = () => {
-        if(window.location.hash.length !== 0) {
-            window.scrollY(offsetAnchor - 100);
-        }
-    }
+    // const offsetAnchor = () => {
+    //     if(window.location.hash.length !== 0) {
+    //         window.document.querySelector("#team2").scroll(0, 100)
+    //     }
+    // }
     
-    window.addEventListener("hashchange", offsetAnchor, false);
+    // window.addEventListener("hashchange", offsetAnchor);
 
     return (
       <div className="home">
@@ -106,16 +107,20 @@ const Home = () => {
                         <a href="#team3"><h4>MEET THE TEAM</h4></a>
                     </div>
                     <div className='textboxes'>
-                        <div className='textBox' id='team'>
+                        <div id='team' className='xtraspace' />
+                        <div className='textBox'>
                             <h4>team stuff goes here</h4>
                         </div>
-                        <div className='textBox' id='team1'>
+                        <div id='team1' className='xtraspace' />
+                        <div className='textBox'>
                             <h4>other</h4>
                         </div>
-                        <div className='textBox' id='team2'>
+                        <div id='team2' className='xtraspace' />
+                        <div className='textBox'>
                             <h4>more other</h4>
                         </div>
-                        <div className='textBox' id='team3'>
+                        <div id='team3' className='xtraspace' />
+                        <div className='textBox'>
                             <h4>and more other</h4>
                         </div>
                     </div>
