@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import {Carousel} from 'react-responsive-carousel';
 import CityWalk from '../images/City_walk.png';
 import Gameroom from '../images/Gameroom.png';
 import Skatepark from '../images/Skatepark.png';
@@ -13,7 +14,7 @@ const Home = () => {
     const [bgClass, setBgClass] = useState('citywalk');
     const [clicked, setClicked] = useState(false);
     const [aboutClass, setAboutClass] = useState('about w-0');
-    const [fullClass, setFullClass] = useState('full');
+    const [wPos, setWPos] = useState('wPos-0');
 
     const onClickAbout = () => {
         if(bgClass=='citywalk'){setBgClass(`${bgClass} zoomIn-0`); setAboutClass('about w-0 expand');};
@@ -31,20 +32,23 @@ const Home = () => {
             setBackground(images[1]);
             setBgClass('gameroom');
             setAboutClass('about w-2');
+            setWPos('wPos-2');
         }
         if(background==images[1]){
             setBackground(images[2]);
             setBgClass('skatepark');
             setAboutClass('about w-1');
+            setWPos('wPos-1');
         }
         if(background==images[2]){
             setBackground(images[0]);
             setBgClass('citywalk');
             setAboutClass('about w-0');
+            setWPos('wPos-0');
         }
     }
 
-
+console.log(aboutClass)
 
     return (
       <div className="home">
@@ -80,9 +84,25 @@ const Home = () => {
                 <HomeRoundedIcon className='home-icon'/>
             </Link>
         </div>
-        <div className={aboutClass}>
-            <div className='exit'>
-                <CloseIcon onClick={onClickClose}/>
+        <div className={wPos}>
+            <div className={aboutClass}>
+                { aboutClass.includes('expand') ? (<div className='aboutTextContainer'>
+                    <div className='textBox'>
+
+                    </div>
+                    <div className='textBox'>
+                        
+                    </div>
+                    <div className='textBox'>
+                        
+                    </div>
+                    <div className='textBox'>
+                        
+                    </div>
+                </div>) : null }
+                <div className='exit'>
+                    <CloseIcon onClick={onClickClose}/>
+                </div>
             </div>
         </div>
         <div className='transition-btn' onClick={bgSwitcher}>
