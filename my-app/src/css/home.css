@@ -941,11 +941,11 @@
 .about .aboutTextContainer .textboxes {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 800px;
   padding-bottom: 10%;
   padding-left: 200px;
   overflow-y: scroll;
-  padding-top: 10%;
+  padding-top: 6%;
 }
 .about .aboutTextContainer .xtraspace {
   width: 100%;
@@ -954,13 +954,26 @@
   margin: 25px 0px;
   padding-top: 25px;
   min-height: 600px;
-  max-width: 700px;
+  max-width: 650px;
   background-color: rgba(114, 58, 131, 0.651);
   border-radius: 10px;
   border: 1px;
   animation: neon-border 5s ease-in-out 0s infinite;
 }
-.about .aboutTextContainer .crew {
+.about .aboutTextContainer .textBox1 {
+  margin: 25px 0px;
+  padding-top: 25px;
+  min-height: 750px;
+  max-width: 650px;
+  background-color: rgba(114, 58, 131, 0.651);
+  border-radius: 10px;
+  border: 1px;
+  animation: neon-border 5s ease-in-out 0s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about .aboutTextContainer .textBox1 .crew {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -969,28 +982,32 @@
   color: rgba(252, 247, 251, 0.801);
   text-shadow: 1px 0px rgba(252, 247, 251, 0.801);
   cursor: default;
+  padding-bottom: 10px;
 }
-.about .aboutTextContainer .crew .person {
+.about .aboutTextContainer .textBox1 .crew .person {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  height: 180px;
+  width: 130px;
   margin: 5px 5px;
   background-color: rgba(14, 11, 13, 0.76);
   border-radius: 15px;
   border: 1px solid rgba(75, 243, 221, 0.726);
   transition: 0.1s ease-in-out;
+  font-size: 14px;
 }
-.about .aboutTextContainer .crew .person .profilepic {
+.about .aboutTextContainer .textBox1 .crew .person .profilepic {
   background-image: url('../images/character_city_walk.png');
-  height: 100px;
-  width: 110px;
+  height: 80px;
+  width: 90px;
   border-radius: 50%;
   margin-top: 10px;
 }
-.about .aboutTextContainer .crew .person:hover {
+.about .aboutTextContainer .textBox1 .crew .person:hover {
   transform: scale(1.1);
+  transition: 0.1s ease-in-out;
 }
 .about .exit {
   position: absolute;

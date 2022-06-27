@@ -977,11 +977,11 @@
 		.textboxes{
 			display: flex;
 			flex-direction: column;
-			width: 600px;
+			width: 800px;
 			padding-bottom: 10%;
 			padding-left: 200px;
 			overflow-y: scroll;
-			padding-top: 10%;
+			padding-top: 6%;
 		}
 
 		.xtraspace {
@@ -992,45 +992,63 @@
 			margin: 25px 0px;
 			padding-top: 25px;
 			min-height: 600px;
-			max-width: 700px;
+			max-width: 650px;
 			background-color: rgba(114, 58, 131, 0.651);
 			border-radius: 10px;
 			border: 1px;
 			animation: neon-border 5s ease-in-out 0s infinite;
 		}
 
-		.crew {
+		.textBox1 {
+			margin: 25px 0px;
+			padding-top: 25px;
+			min-height: 750px;
+			max-width: 650px;
+			background-color: rgba(114, 58, 131, 0.651);
+			border-radius: 10px;
+			border: 1px;
+			animation: neon-border 5s ease-in-out 0s infinite;
 			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			color:rgba(252, 247, 251, 0.801);
-			text-shadow: 1px 0px rgba(252, 247, 251, 0.801);
-			cursor:default;
+			flex-direction: column;
+			justify-content: space-between;
 
-			.person {
+			.crew {
 				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
 				justify-content: center;
 				align-items: center;
-				flex-direction: column;
-				width: 30%;
-				margin: 5px 5px;
-				background-color:rgba(14, 11, 13, 0.76);
-				border-radius: 15px;
-				border: 1px solid rgba(75, 243, 221, 0.726);
-				transition: 0.1s ease-in-out;
-				
-				.profilepic {
-					background-image: url('../images/character_city_walk.png');
-					height: 100px;
-					width: 110px;
-					border-radius: 50%;
-					margin-top: 10px;
+				color:rgba(252, 247, 251, 0.801);
+				text-shadow: 1px 0px rgba(252, 247, 251, 0.801);
+				cursor: default;
+				padding-bottom: 10px;
+	
+				.person {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					height: 180px;
+					width: 130px;
+					margin: 5px 5px;
+					background-color:rgba(14, 11, 13, 0.76);
+					border-radius: 15px;
+					border: 1px solid rgba(75, 243, 221, 0.726);
+					transition: 0.1s ease-in-out;
+					font-size: 14px;
+					
+					.profilepic {
+						background-image: url('../images/character_city_walk.png');
+						height: 80px;
+						width: 90px;
+						border-radius: 50%;
+						margin-top: 10px;
+					}
 				}
-			}
-			.person:hover {
-				transform: scale(1.1);
+				.person:hover {
+					transform: scale(1.1);
+					transition: 0.1s ease-in-out;
+				}
 			}
 		}
 	}

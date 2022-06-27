@@ -100,13 +100,55 @@ const Home = () => {
                     </div>
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
-                        <div className='textBox'>
+                        <div className='textBox1'>
                             <h4>Meet the crew</h4>
                             <div className='crew'>
                                 <div className='person'>
                                     <div className='profilepic' />
                                     <div className='title'>
                                         <p>Nico</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
+                                        <p>engineer/crypto enthusiast</p>
+                                    </div>
+                                </div>
+                                <div className='person'>
+                                    <div className='profilepic' />
+                                    <div className='title'>
+                                        <p>Pete</p>
                                         <p>engineer/crypto enthusiast</p>
                                     </div>
                                 </div>
