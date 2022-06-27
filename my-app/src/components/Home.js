@@ -55,14 +55,6 @@ const Home = () => {
 
     document.addEventListener("keydown", escFunction, false);
 
-    // const offsetAnchor = () => {
-    //     if(window.location.hash.length !== 0) {
-    //         window.document.querySelector("#team2").scroll(0, 100)
-    //     }
-    // }
-    
-    // window.addEventListener("hashchange", offsetAnchor);
-
     return (
       <div className="home">
         <div className={bgClass} />
