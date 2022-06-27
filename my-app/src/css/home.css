@@ -1019,8 +1019,8 @@
 }
 @keyframes neon-border {
   0% {
-    border: 5px solid rgba(219, 60, 206, 0.849);
-    box-shadow: 0px 0px 17px 1px rgba(219, 60, 206, 0.849);
+    border: 5px solid rgba(60, 219, 171, 0.849);
+    box-shadow: 0px 0px 17px 1px rgba(60, 219, 211, 0.849);
   }
   50% {
     border: 5px solid #eb0ef7;
@@ -1031,8 +1031,8 @@
     box-shadow: 0px 0px 17px 1px #eb0ef7;
   }
   100% {
-    border: 5px solid rgba(219, 60, 206, 0.849);
-    box-shadow: 0px 0px 17px 1px rgba(219, 60, 206, 0.849);
+    border: 5px solid rgba(60, 219, 206, 0.849);
+    box-shadow: 0px 0px 17px 1px rgba(60, 187, 219, 0.849);
   }
 }
 @keyframes fade-in-scroll {
