@@ -968,6 +968,7 @@
   align-items: center;
   color: rgba(252, 247, 251, 0.801);
   text-shadow: 1px 0px rgba(252, 247, 251, 0.801);
+  cursor: default;
 }
 .about .aboutTextContainer .crew .person {
   display: flex;
@@ -978,7 +979,8 @@
   margin: 5px 5px;
   background-color: rgba(14, 11, 13, 0.76);
   border-radius: 15px;
-  border: 1px solid rgba(75, 243, 89, 0.726);
+  border: 1px solid rgba(75, 243, 221, 0.726);
+  transition: 0.1s ease-in-out;
 }
 .about .aboutTextContainer .crew .person .profilepic {
   background-image: url('../images/character_city_walk.png');
@@ -988,7 +990,7 @@
   margin-top: 10px;
 }
 .about .aboutTextContainer .crew .person:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .about .exit {
   position: absolute;
