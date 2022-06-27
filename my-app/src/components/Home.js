@@ -54,6 +54,14 @@ const Home = () => {
 
     document.addEventListener("keydown", escFunction, false);
 
+    const offsetAnchor = () => {
+        if(window.location.hash.length !== 0) {
+            window.scrollY(offsetAnchor - 100);
+        }
+    }
+    
+    window.addEventListener("hashchange", offsetAnchor, false);
+
     return (
       <div className="home">
         <div className={bgClass} />

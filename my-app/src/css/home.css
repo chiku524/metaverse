@@ -903,7 +903,6 @@
   background-image: url('../images/character_city_walk.png');
   transition: 1s ease-in;
   overflow: hidden;
-  scroll-behavior: smooth;
   display: flex;
   flex-direction: row;
 }
@@ -917,8 +916,10 @@
   height: 100vh;
   margin-left: 2%;
   scroll-snap-align: start;
+  transition: 1s ease-in-out;
   animation: fade-in-scroll 1s ease-in-out 0s;
   margin-bottom: 10%;
+  scroll-behavior: smooth;
 }
 .about .aboutTextContainer .mininav {
   position: fixed;
@@ -928,10 +929,13 @@
   height: 30%;
 }
 .about .aboutTextContainer .mininav a {
-  text-shadow: 3px 4px 1px rgba(255, 252, 252, 0.199);
+  text-shadow: 3px 4px 1px rgba(225, 34, 231, 0.199);
   text-decoration: none;
   color: #fffcfc;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.about .aboutTextContainer .mininav a:hover {
+  color: black;
 }
 .about .aboutTextContainer .textboxes {
   display: flex;
@@ -940,6 +944,7 @@
   padding-bottom: 40%;
   padding-left: 200px;
   overflow-y: scroll;
+  padding-top: 10%;
 }
 .about .aboutTextContainer .textBox {
   margin: 25px 0px;

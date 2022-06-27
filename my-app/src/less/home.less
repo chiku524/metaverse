@@ -940,7 +940,6 @@
     transition: 1s ease-in;
     overflow: hidden;
 	::-webkit-scrollbar {width: 0; height: 80vh;}
-	scroll-behavior: smooth;
 	display: flex;
 	flex-direction: row;
 
@@ -950,8 +949,10 @@
 		height: 100vh;
 		margin-left: 2%;
 		scroll-snap-align: start;
+		transition: 1s ease-in-out;
 		animation: fade-in-scroll 1s ease-in-out 0s;
 		margin-bottom: 10%;
+		scroll-behavior: smooth;
 
 		.mininav {
 			position: fixed;
@@ -962,10 +963,14 @@
 		}
 
 		.mininav a {
-			text-shadow: 3px 4px 1px rgba(255, 252, 252, 0.199);
+			text-shadow: 3px 4px 1px rgba(225, 34, 231, 0.199);
 			text-decoration: none;
 			color:rgb(255, 252, 252);
-			transition: 1s ease-in-out;
+			transition: .2s ease-in-out;
+		}
+
+		.mininav a:hover {
+			color: black;
 		}
 
 		.textboxes{
@@ -975,6 +980,7 @@
 			padding-bottom: 40%;
 			padding-left: 200px;
 			overflow-y: scroll;
+			padding-top: 10%;
 		}
 		
 		.textBox {
