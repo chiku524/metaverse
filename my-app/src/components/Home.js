@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import {Link} from 'react-router-dom';
 import {Carousel} from 'react-responsive-carousel';
 import CityWalk from '../images/City_walk.png';
@@ -48,7 +48,11 @@ const Home = () => {
         }
     }
 
-console.log(aboutClass)
+    const escFunction = (event) => {
+        if(event.key === "Escape") {onClickClose()};
+    }
+
+    document.addEventListener("keydown", escFunction, false);
 
     return (
       <div className="home">
