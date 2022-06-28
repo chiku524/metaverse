@@ -957,7 +957,7 @@
   margin: 25px 0px;
   padding-top: 25px;
   min-height: 600px;
-  max-width: 650px;
+  max-width: 750px;
   background-color: rgba(114, 58, 131, 0.651);
   border-radius: 10px;
   border: 1px;
@@ -967,7 +967,7 @@
   margin: 25px 0px;
   padding-top: 25px;
   min-height: 750px;
-  max-width: 650px;
+  max-width: 750px;
   background-color: rgba(114, 58, 131, 0.651);
   border-radius: 10px;
   border: 1px;
@@ -985,7 +985,7 @@
   color: rgba(252, 247, 251, 0.801);
   text-shadow: 1px 0px rgba(252, 247, 251, 0.801);
   cursor: default;
-  padding-bottom: 10px;
+  padding: 0 30px;
 }
 .about .aboutTextContainer .textBox1 .crew .person {
   display: flex;
@@ -993,8 +993,8 @@
   align-items: center;
   flex-direction: column;
   height: 180px;
-  width: 130px;
-  margin: 5px 5px;
+  width: 150px;
+  margin: 10px 10px;
   background-color: rgba(14, 11, 13, 0.76);
   border-radius: 15px;
   border: 1px solid rgba(75, 243, 221, 0.726);
@@ -1007,6 +1007,9 @@
   width: 90px;
   border-radius: 50%;
   margin-top: 10px;
+}
+.about .aboutTextContainer .textBox1 .crew .person .title {
+  padding: 0px 50px;
 }
 .about .aboutTextContainer .textBox1 .crew .person:hover {
   transform: scale(1.1);
