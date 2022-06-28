@@ -1014,7 +1014,7 @@
   flex-direction: column;
   height: 180px;
   width: 140px;
-  background-color: rgba(14, 11, 13, 0.76);
+  background-color: #0e0b0d;
   border: 1px solid rgba(75, 243, 221, 0.726);
   transition: 0.1s ease-in-out;
   font-size: 14px;
