@@ -905,11 +905,13 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  animation: fade-out-scroll 3s 0s;
 }
 .about ::-webkit-scrollbar {
   width: 0;
   height: 80vh;
+}
+.about .zero-opacity {
+  opacity: 0 !important;
 }
 .about .aboutTextContainer {
   display: flex;
@@ -918,7 +920,6 @@
   margin-left: 2%;
   scroll-snap-align: start;
   transition: 1s ease-in-out;
-  animation: fade-in-scroll 3s 0s;
   margin-bottom: 10%;
   scroll-behavior: smooth;
 }
@@ -1098,7 +1099,6 @@
   width: 415px;
   transform: perspective(10000px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0.1deg);
   overflow: hidden;
-  animation: fade-out-scroll 3s 0s;
   z-index: 1;
 }
 .w-1 {
@@ -1107,7 +1107,6 @@
   margin: 0 auto;
   transform: perspective(10000px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0.1deg) skewY(0deg);
   overflow: hidden;
-  animation: fade-out-scroll 3s 0s;
   z-index: 1;
 }
 .w-2 {
@@ -1119,7 +1118,6 @@
   height: 120px;
   width: 150px;
   transform: perspective(89px) scale(1) rotateX(-1deg) rotateY(-5.5deg) rotateZ(0.1deg) skewX(2deg);
-  animation: fade-out-scroll 3s 0s;
   z-index: 1;
 }
 .expand {

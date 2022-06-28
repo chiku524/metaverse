@@ -140,7 +140,7 @@ const Home = () => {
                             <h4>and more other</h4>
                         </div>
                     </div>
-                </div>) : <div className='aboutTextContainer' style={{opacity: 0}}>
+                </div>) : <div className='aboutTextContainer zero-opacity' style={{opacity: 0}}>
                     <div className='mininav'>
                         <a href="#team"><h4>MEET THE TEAM</h4></a>
                         <a href="#team1"><h4>MEET THE TEAM</h4></a>
