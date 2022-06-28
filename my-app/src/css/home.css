@@ -33,7 +33,7 @@
   fill-opacity: 10%;
   transition-duration: 0.3s;
   position: absolute;
-  bottom: 130px;
+  bottom: 90px;
   left: 42%;
   border: 0.3px solid rgba(219, 200, 200, 0.1);
 }
@@ -905,6 +905,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  animation: fade-out-scroll 3s 0s;
 }
 .about ::-webkit-scrollbar {
   width: 0;
@@ -917,7 +918,7 @@
   margin-left: 2%;
   scroll-snap-align: start;
   transition: 1s ease-in-out;
-  animation: fade-in-scroll 1s ease-in-out 0s;
+  animation: fade-in-scroll 3s 0s;
   margin-bottom: 10%;
   scroll-behavior: smooth;
 }
@@ -927,6 +928,7 @@
   top: 30%;
   cursor: pointer;
   height: 30%;
+  animation: fade-in-scroll 3s 0s;
 }
 .about .aboutTextContainer .mininav a {
   text-shadow: 3px 4px 1px rgba(225, 34, 231, 0.199);
@@ -1045,6 +1047,16 @@
     transition: opacity 1s ease-in-out;
   }
 }
+@keyframes fade-out-scroll {
+  0% {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  100% {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+}
 .about.expand .exit {
   opacity: 1;
   transition: 2s ease-in-out;
@@ -1086,15 +1098,17 @@
   width: 415px;
   transform: perspective(10000px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0.1deg);
   overflow: hidden;
+  animation: fade-out-scroll 3s 0s;
+  z-index: 1;
 }
 .w-1 {
   height: 271px;
   width: 492px;
   margin: 0 auto;
-  bottom: 240px;
-  right: 405.4px;
   transform: perspective(10000px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0.1deg) skewY(0deg);
   overflow: hidden;
+  animation: fade-out-scroll 3s 0s;
+  z-index: 1;
 }
 .w-2 {
   background-size: cover;
@@ -1105,6 +1119,8 @@
   height: 120px;
   width: 150px;
   transform: perspective(89px) scale(1) rotateX(-1deg) rotateY(-5.5deg) rotateZ(0.1deg) skewX(2deg);
+  animation: fade-out-scroll 3s 0s;
+  z-index: 1;
 }
 .expand {
   width: 100vw;

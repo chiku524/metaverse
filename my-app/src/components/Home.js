@@ -55,6 +55,21 @@ const Home = () => {
 
     document.addEventListener("keydown", escFunction, false);
 
+    const people = [
+        {person: 'steve', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'pete', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+        {person: 'nico', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
+    ]
+
     return (
       <div className="home">
         <div className={bgClass} />
@@ -103,90 +118,13 @@ const Home = () => {
                         <div className='textBox1'>
                             <h4>Meet the crew</h4>
                             <div className='crew'>
-                                <div className='person'>
-                                    <div className='profilepic' />
+                                {people.map((employee) => <div className='person'>
+                                    <img className='profilepic' src={employee.profilepic} />
                                     <div className='title'>
-                                        <p>Nico</p>
-                                        <p>engineer/crypto enthusiast</p>
+                                        <p>{employee.person}</p>
+                                        <p>{employee.title}</p>
                                     </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
-                                <div className='person'>
-                                    <div className='profilepic' />
-                                    <div className='title'>
-                                        <p>Pete</p>
-                                        <p>engineer/crypto enthusiast</p>
-                                    </div>
-                                </div>
+                                </div>)}
                             </div>
                         </div>
                         <div id='team1' className='xtraspace' />
@@ -202,7 +140,41 @@ const Home = () => {
                             <h4>and more other</h4>
                         </div>
                     </div>
-                </div>) : null }
+                </div>) : <div className='aboutTextContainer' style={{opacity: 0}}>
+                    <div className='mininav'>
+                        <a href="#team"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team1"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team2"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team3"><h4>MEET THE TEAM</h4></a>
+                    </div>
+                    <div className='textboxes'>
+                        <div id='team' className='xtraspace' />
+                        <div className='textBox1'>
+                            <h4>Meet the crew</h4>
+                            <div className='crew'>
+                                {people.map((employee) => <div className='person'>
+                                    <img className='profilepic' src={employee.profilepic} />
+                                    <div className='title'>
+                                        <p>{employee.person}</p>
+                                        <p>{employee.title}</p>
+                                    </div>
+                                </div>)}
+                            </div>
+                        </div>
+                        <div id='team1' className='xtraspace' />
+                        <div className='textBox'>
+                            <h4>other</h4>
+                        </div>
+                        <div id='team2' className='xtraspace' />
+                        <div className='textBox'>
+                            <h4>more other</h4>
+                        </div>
+                        <div id='team3' className='xtraspace' />
+                        <div className='textBox'>
+                            <h4>and more other</h4>
+                        </div>
+                    </div>
+                </div> }
                 <div className='exit'>
                     <CloseIcon onClick={onClickClose}/>
                 </div>
