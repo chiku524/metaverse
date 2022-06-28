@@ -160,10 +160,10 @@ const Home = () => {
                     </div>
                 </div>) : <div className='aboutTextContainer zero-opacity' style={{opacity: 0}}>
                     <div className='mininav'>
-                        <a href="#team"><h4>MEET THE TEAM</h4></a>
-                        <a href="#team1"><h4>OTHER</h4></a>
-                        <a href="#team2"><h4>MORE OTHER</h4></a>
-                        <a href="#team3"><h4>AND MORE OTHER</h4></a>
+                        <a href="#team"><h4>|</h4></a>
+                        <a href="#team1"><h4>|</h4></a>
+                        <a href="#team2"><h4>|</h4></a>
+                        <a href="#team3"><h4>|</h4></a>
                     </div>
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
