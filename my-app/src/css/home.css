@@ -920,7 +920,6 @@
   margin-left: 2%;
   scroll-snap-align: start;
   transition: 1s ease-in-out;
-  margin-bottom: 10%;
   scroll-behavior: smooth;
 }
 .about .aboutTextContainer .mininav {
@@ -928,8 +927,12 @@
   left: 2%;
   top: 30%;
   cursor: pointer;
-  height: 30%;
+  height: 20%;
+  width: 5px;
   animation: fade-in-scroll 3s 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .about .aboutTextContainer .mininav a {
   text-shadow: 3px 4px 1px rgba(225, 34, 231, 0.199);
@@ -937,8 +940,14 @@
   color: #fffcfc;
   transition: 0.2s ease-in-out;
   -webkit-transition: all 0.5s ease;
+  height: 30px;
+  width: 5px;
+  font-size: 30px;
 }
 .about .aboutTextContainer .mininav a:hover {
+  color: black;
+}
+.about .aboutTextContainer .active {
   color: black;
 }
 .about .aboutTextContainer .textboxes {

@@ -13,7 +13,7 @@ const Home = () => {
     const [background, setBackground] = useState([CityWalk]);
     const [images] = useState([CityWalk, Gameroom, Skatepark]);
     const [bgClass, setBgClass] = useState('citywalk');
-    const [clicked, setClicked] = useState(false);
+    const [scrollbtn, setScrollbtn] = useState(false);
     const [aboutClass, setAboutClass] = useState('about w-0');
     const [wPos, setWPos] = useState('wPos-0');
 
@@ -54,6 +54,12 @@ const Home = () => {
     }
 
     document.addEventListener("keydown", escFunction, false);
+
+    const scoller = () => {
+        if(window.location.hash === 'team'){
+            setScrollbtn('active');
+        }
+    }
 
     const people = [
         {person: 'steve', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
@@ -107,6 +113,12 @@ const Home = () => {
         <div className={wPos}>
             <div className={aboutClass}>
                 { aboutClass.includes('expand') ? (<div className='aboutTextContainer'>
+                    <div className='mininav'>
+                        <a href="#team" className={scrollbtn}>|</a>
+                        <a href="#team1" className={scrollbtn}>|</a>
+                        <a href="#team2" className={scrollbtn}>|</a>
+                        <a href="#team3" className={scrollbtn}>|</a>
+                    </div>
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
                         <div className='textBox1'>
@@ -135,6 +147,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>) : <div className='aboutTextContainer zero-opacity' style={{opacity: 0}}>
+                    <div className='mininav'>
+                        <a href="#team"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team1"><h4>OTHER</h4></a>
+                        <a href="#team2"><h4>MORE OTHER</h4></a>
+                        <a href="#team3"><h4>AND MORE OTHER</h4></a>
+                    </div>
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
                         <div className='textBox1'>
