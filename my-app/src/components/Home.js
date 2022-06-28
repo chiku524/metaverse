@@ -19,8 +19,8 @@ const Home = () => {
 
     const onClickAbout = () => {
         if(bgClass=='citywalk'){setBgClass(`${bgClass} zoomIn-0`); setAboutClass('about w-0 expand');};
-        if(bgClass=='skatepark'){setBgClass(`${bgClass} zoomIn-1`); setAboutClass('about w-1 expand');};
-        if(bgClass=='gameroom'){setBgClass(`${bgClass} zoomIn-2`); setAboutClass('about w-2 expand');};
+        if(bgClass=='skatepark'){setBgClass(`${bgClass} zoomIn-1`); setAboutClass('about w-1 expand1');};
+        if(bgClass=='gameroom'){setBgClass(`${bgClass} zoomIn-2`); setAboutClass('about w-2 expand2');};
     }
     const onClickClose = () => {
         if(bgClass=='citywalk zoomIn-0'){setBgClass('citywalk'); setAboutClass('about w-0');}
@@ -109,9 +109,9 @@ const Home = () => {
                 { aboutClass.includes('expand') ? (<div className='aboutTextContainer'>
                     <div className='mininav'>
                         <a href="#team"><h4>MEET THE TEAM</h4></a>
-                        <a href="#team1"><h4>MEET THE TEAM</h4></a>
-                        <a href="#team2"><h4>MEET THE TEAM</h4></a>
-                        <a href="#team3"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team1"><h4>OTHER</h4></a>
+                        <a href="#team2"><h4>MORE OTHER</h4></a>
+                        <a href="#team3"><h4>AND MORE OTHER</h4></a>
                     </div>
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
@@ -143,9 +143,9 @@ const Home = () => {
                 </div>) : <div className='aboutTextContainer zero-opacity' style={{opacity: 0}}>
                     <div className='mininav'>
                         <a href="#team"><h4>MEET THE TEAM</h4></a>
-                        <a href="#team1"><h4>MEET THE TEAM</h4></a>
-                        <a href="#team2"><h4>MEET THE TEAM</h4></a>
-                        <a href="#team3"><h4>MEET THE TEAM</h4></a>
+                        <a href="#team1"><h4>OTHER</h4></a>
+                        <a href="#team2"><h4>MORE OTHER</h4></a>
+                        <a href="#team3"><h4>AND MORE OTHER</h4></a>
                     </div>
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
