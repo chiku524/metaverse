@@ -934,6 +934,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.about .aboutTextContainer .mininav .active {
+  color: black !important;
+}
 .about .aboutTextContainer .mininav a {
   text-shadow: 3px 4px 1px rgba(225, 34, 231, 0.199);
   text-decoration: none;
@@ -945,9 +948,6 @@
   font-size: 30px;
 }
 .about .aboutTextContainer .mininav a:hover {
-  color: black;
-}
-.about .aboutTextContainer .active {
   color: black;
 }
 .about .aboutTextContainer .textboxes {

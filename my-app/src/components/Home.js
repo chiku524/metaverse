@@ -1,12 +1,11 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import {Link} from 'react-router-dom';
-import {Carousel} from 'react-responsive-carousel';
 import CityWalk from '../images/City_walk.png';
 import Gameroom from '../images/Gameroom.png';
 import Skatepark from '../images/Skatepark.png';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import CloseIcon from '@mui/icons-material/Close';
-import $ from 'jquery';
+import {InView} from 'react-intersection-observer';
 import '../css/home.css';
 
 const Home = () => {
@@ -55,12 +54,16 @@ const Home = () => {
 
     document.addEventListener("keydown", escFunction, false);
 
-    const scoller = () => {
-        if(window.location.hash === 'team'){
-            setScrollbtn('active');
-        }
-    }
+    // const scroller = () => {
+    //     if(document.querySelector(".textBox1") !== document.querySelector(".textBox1").) {
+    //         document.querySelector(".scroller").classList.add("active");
+    //         console.log('i made it');
+    //     }
+    //     // console.log(document.querySelector(".scroller").classList);
+    // }
 
+    // document.addEventListener("wheel", scroller);
+    
     const people = [
         {person: 'steve', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
         {person: 'pete', profilepic: CityWalk, title: 'engineer/blockchain enthusiast'},
@@ -114,37 +117,46 @@ const Home = () => {
             <div className={aboutClass}>
                 { aboutClass.includes('expand') ? (<div className='aboutTextContainer'>
                     <div className='mininav'>
-                        <a href="#team" className={scrollbtn}>|</a>
-                        <a href="#team1" className={scrollbtn}>|</a>
-                        <a href="#team2" className={scrollbtn}>|</a>
-                        <a href="#team3" className={scrollbtn}>|</a>
+                        <a href="#team" className="scroller">|</a>
+                        <a href="#team1" className="scroller1">|</a>
+                        <a href="#team2" className="scroller2">|</a>
+                        <a href="#team3" className="scroller3">|</a>
                     </div>
                     <div className='textboxes'>
                         <div id='team' className='xtraspace' />
-                        <div className='textBox1'>
-                            <h4>Meet the crew</h4>
-                            <div className='crew'>
-                                {people.map((employee) => <div className='person'>
-                                    <img className='profilepic' src={employee.profilepic} />
-                                    <div className='title'>
-                                        <p>{employee.person}</p>
-                                        <p>{employee.title}</p>
-                                    </div>
-                                </div>)}
+                        <InView threshold={0.7} onChange={(InView, entry) => InView ? document.querySelector(".scroller").classList.add("active") : document.querySelector(".scroller").classList.remove("active")}>
+                            <div className='textBox1'>
+                                <h4>Meet the crew</h4>
+                                <div className='crew'>
+                                    {people.map((employee) => <div className='person'>
+                                        <img className='profilepic' src={employee.profilepic} />
+                                        <div className='title'>
+                                            <p>{employee.person}</p>
+                                            <p>{employee.title}</p>
+                                        </div>
+                                    </div>)}
+                                </div>
                             </div>
-                        </div>
+                        </InView>
                         <div id='team1' className='xtraspace' />
-                        <div className='textBox'>
-                            <h4>other</h4>
-                        </div>
+                        <InView threshold={0.7} onChange={(InView, entry) => InView ? document.querySelector(".scroller1").classList.add("active") : document.querySelector(".scroller1").classList.remove("active")}>
+                            <div className='textBox'>
+                                <h4>other</h4>
+                            </div>
+                        </InView>
+                        
                         <div id='team2' className='xtraspace' />
-                        <div className='textBox'>
-                            <h4>more other</h4>
-                        </div>
+                        <InView threshold={0.7} onChange={(InView, entry) => InView ? document.querySelector(".scroller2").classList.add("active") : document.querySelector(".scroller2").classList.remove("active")}>
+                            <div className='textBox'>
+                                <h4>other</h4>
+                            </div>
+                        </InView>
                         <div id='team3' className='xtraspace' />
-                        <div className='textBox'>
-                            <h4>and more other</h4>
-                        </div>
+                        <InView threshold={0.7} onChange={(InView, entry) => InView ? document.querySelector(".scroller3").classList.add("active") : document.querySelector(".scroller3").classList.remove("active")}>
+                            <div className='textBox'>
+                                <h4>other</h4>
+                            </div>
+                        </InView>
                     </div>
                 </div>) : <div className='aboutTextContainer zero-opacity' style={{opacity: 0}}>
                     <div className='mininav'>
