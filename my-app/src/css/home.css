@@ -964,6 +964,11 @@
     padding-left: 200px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .about .aboutTextContainer .textboxes {
+    width: 600px;
+  }
+}
 .about .aboutTextContainer .xtraspace {
   width: 100%;
 }
@@ -1162,6 +1167,7 @@
   overflow: hidden;
   z-index: 3;
   background-size: 1920px 100vh;
+  background-position: center;
 }
 .expand1 {
   min-width: 100vw;
@@ -1175,7 +1181,8 @@
   transform: none;
   overflow: hidden;
   z-index: 3;
-  background-size: 100vw 100vh;
+  background-size: 1920px 100vh;
+  background-position: center;
 }
 .expand2 {
   min-width: 100vw;
@@ -1187,7 +1194,8 @@
   transform: none;
   overflow: hidden;
   z-index: 3;
-  background-size: 100vw 100vh;
+  background-size: 1920px 100vh;
+  background-position: center;
 }
 .zoomIn-0 {
   transform: scale(4.7) translateY(-14.5%) rotateZ(0deg);
